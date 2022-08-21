@@ -1,0 +1,54 @@
+@import "../scss/typography.scss";
+@import "../scss/variable.scss";
+
+main{
+  position: relative;
+  margin: 5rem auto;
+ 
+
+  .mainContent--about{
+    margin: 5rem auto;
+    @include centerFlex;
+    gap: 5rem;
+    .about_photo{
+      img{
+        max-height: 50vh;
+        border-radius: 5px;       
+      }
+    }
+    .about_text{
+      max-width: 30%;
+      text-align: center;
+      h2{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+  
+      p{
+        font-size: 2rem;
+        font-weight: 200;
+      }
+    }
+  }
+  .mainContent--whatWeHave{
+    margin: 10rem 5rem;
+    text-align: left;
+    h2{
+      font-size: 3rem;
+      margin-bottom: 5rem
+    }
+    .whatWeHave{
+      @include centerFlex;
+      font-size: 2rem;
+      justify-content: space-between;
+
+      .whatWeHave--content{
+        border: 1px solid #000;
+        width: 25rem;
+        height: 20rem;
+        @include centerFlex;      }
+    }
+    
+  }
+  
+}
