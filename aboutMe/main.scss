@@ -4,7 +4,7 @@
 main{
   position: relative;
   margin: 5rem auto;
- 
+  
 
   .mainContent--about{
     margin: 5rem auto;
@@ -20,12 +20,12 @@ main{
       max-width: 30%;
       text-align: center;
       h2{
-        font-size: 4rem;
+        font-size: 3rem;
         margin-bottom: 2rem;
       }
   
       p{
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 200;
       }
     }
@@ -43,10 +43,27 @@ main{
       justify-content: space-between;
 
       .whatWeHave--content{
-        border: 1px solid #000;
+        
         width: 25rem;
         height: 20rem;
-        @include centerFlex;      }
+        @include centerFlex;
+        padding: 1.25rem auto;
+        font-size: 1.6rem;
+        flex-direction: column;
+        color: #323232;
+        background-color: #f7f7f7;
+
+        i{
+          font-weight: 600;
+          font-size: 2rem;
+          padding-bottom: 2rem;
+        }
+
+        span{
+          font-weight: 200;
+        }
+
+      }
     }
     
   }

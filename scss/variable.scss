@@ -3,3 +3,27 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin titleFont {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+@mixin btn {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border: 2px solid $text-main-color;
+  font-size: 1rem;
+  font-weight: 600;
+  color:$text-main-color;
+  &:hover{
+    background-color: $text-main-color;
+    color: $btn-color-hover;
+  }
+}
+
+
+$text-main-color:#333;
+$text-color-hover:#ab977a;
+$btn-color-hover:white;

@@ -9,7 +9,7 @@
   flex-direction: column;
   padding: 2rem;
   // ------------------------Header------------------------
-  header{
+  .header{
     position: relative;
     display: flex;
     justify-content: center;
@@ -40,26 +40,33 @@
       }
     
   }
+  main{
+    flex: 1;
+  }
 // ------------------------Footer--------------------
   footer{
-    display: grid;
-    place-items: center;
+    position: relative;
+    @include centerFlex;
+    flex-direction: column;
+    // border-top: 1px solid #000;
+    
     ul{
       display: flex;
       gap: 0.8rem;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
+      
         a{
           padding: 0.8rem;
           border: 2px solid #000;
           border-radius: 50%;
           font-size: 1.5rem;
           color: $text-main-color;
-
           &:hover{
             background-color: #3c5fac;
             color: white;
           }
       }
+      
     }
   }
 }
